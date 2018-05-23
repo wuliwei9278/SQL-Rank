@@ -1,10 +1,5 @@
 # SQL-Rank: A Listwise Approach to Collaborative Ranking
 ## Announcement:
-- A Novel Listwise Collaborative Ranking Algorithm to be published at ICML'18
-
-
-# Large-scale Collaborative Ranking in Near-Linear Time
-## Announcement:
 - The paper has been accepted for oral presentation (24.9% acceptance rate) by ICML’18, Stockholm, Sweden (https://icml.cc/Conferences/2018/AcceptedPapersInitial).
 - I gave an oral presentation about this work at Stockholm sometime between July 10 - 15, 2017.
 - You can cite the work as below for now 
