@@ -2,14 +2,10 @@
 # 1. Rewrite gradient calculation to reduce time complexity to O(d2_bar)
 # 2. Remove line search and calculate average of gradients
 
-# main("ml1m_full_tr.csv", "ml1m_full_te.csv", 0.1, 4, 100, 3)
-# main("foursquare_oc_10_train_ratings.csv", "foursquare_oc_10_test_ratings.csv", 0.1, 4, 100, 3)
-# main("usr_bookmarks_oc_50_train_ratings.csv", "usr_bookmarks_oc_50_test_ratings.csv",0.1, 4, 100, 3)
-# main("checkin_gowalla.oc_train_ratingsALL.csv", "checkin_gowalla.oc_test_ratings100.csv", 0.1, 4, 100, 3)
-# main("checkin_gowalla_oc_50_train_ratings.csv", "checkin_gowalla_oc_50_test_ratings.csv", 0.1, 4, 100, 3)
-# main("ml1m_oc_50_train_ratings.csv", "ml1m_oc_50_test_ratings.csv", 0.1, 4, 100, 3)
 
-function main(train, test, learning_rate, lambda, r, ratio)
+# main("ml1m_oc_50_train_ratings.csv", "ml1m_oc_50_test_ratings.csv", 0.2, 0.9, 1, 4, 100, 3)
+
+function main(train, test, learning_rate, decay_rate, T, lambda, r, ratio)
 	#train = "ml1m_oc_50_train_ratings.csv"
 	#test = "ml1m_oc_50_test_ratings.csv"
 	# requires ratio to be integer, usually 3 works best
@@ -142,8 +138,8 @@ function main(train, test, learning_rate, lambda, r, ratio)
         #    learning_rate = learning_rate * 0.3
         #end
         #learning_rate = learning_rate * 0.95
-        if (epoch - 1) % 1 == 0
-            learning_rate = learning_rate * 0.9
+        if (epoch - 1) % T == 0
+            learning_rate = learning_rate * decay_rate
             p1,p2,p3=compute_precision(U, V, X, Y, d1, d2, rows, vals, rows_t, vals_t);
 		    m = comp_m(new_rows, new_cols, U, V);
 		    nowobj = objective(new_index, m, new_rows, d1, lambda, U, V);
