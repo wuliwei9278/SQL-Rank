@@ -1,10 +1,16 @@
 # SQL-Rank: A Listwise Approach to Collaborative Ranking
 ## Announcement:
-- The paper has been accepted for oral presentation (24.9% acceptance rate) by ICML’18, Stockholm, Sweden (https://icml.cc/Conferences/2018/AcceptedPapersInitial). One can find the paper on arXiv: https://arxiv.org/abs/1803.00114.
-- I will give an oral presentation about this work at Stockholm sometime between July 10 - 15, 2018.
-- You can cite the work as below for now 
+- The paper has been accepted for oral presentation (24.9% acceptance rate) by ICML’18, Stockholm, Sweden (https://icml.cc/Conferences/2018/AcceptedPapersInitial). One can find the paper on my personal website: http://anson.ucdavis.edu/~liweiwu/papers/icml18.pdf.
+- I gave an oral presentation about this work at Stockholm, Sweden on July, 2018.
+- You can cite the work using the BibTex below:
 
-> Wu, Liwei, Cho-Jui Hsieh, and James Sharpnack. "SQL-Rank: A Listwise Approach to Collaborative Ranking." arXiv preprint arXiv:1803.00114 (2018).
+@inproceedings{wu2018sql,
+  title={SQL-Rank: A Listwise Approach to Collaborative Ranking},
+  author={Wu, Liwei and Hsieh, Cho-Jui and Sharpnack, James},
+  booktitle={Proceedings of Machine Learning Research (35th International Conference on Machine Learning)},
+  volume={80},
+  year={2018}
+}
 
 ## Description: 
 This repo consists of sample train/test data and SQL-Rank algorithm julia source code. 
