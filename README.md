@@ -4,6 +4,7 @@
 - I gave an oral presentation about this work at Stockholm, Sweden on July, 2018.
 - You can cite the work using the BibTex below:
 
+```
 @inproceedings{wu2018sql,
   title={SQL-Rank: A Listwise Approach to Collaborative Ranking},
   author={Wu, Liwei and Hsieh, Cho-Jui and Sharpnack, James},
@@ -11,6 +12,7 @@
   volume={80},
   year={2018}
 }
+```
 
 ## Description: 
 This repo consists of sample train/test data and SQL-Rank algorithm julia source code. 
