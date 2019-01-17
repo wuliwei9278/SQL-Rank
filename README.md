@@ -15,7 +15,7 @@
 ```
 
 ## Description: 
-This repo consists of sample train/test data and SQL-Rank algorithm julia source code. It only works on Julia 0.6 so it requires modification on Julia 1.0. 
+This repo consists of sample train/test data and SQL-Rank algorithm julia source code. It only works on Julia 0.6 so it requires modification on Julia 1.0. Also, evaluation part does not use sampling for computing precisions so that part would be too slow to run on large datasets. One should either sample items or sample users to estimate the precision. The codes work fine on small dataset like Movielens 1M. 
 
 
 
