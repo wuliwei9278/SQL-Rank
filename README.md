@@ -15,7 +15,7 @@
 ```
 
 ## Description: 
-This repo consists of sample train/test data and SQL-Rank algorithm julia source code. 
+This repo consists of sample train/test data and SQL-Rank algorithm julia source code. It only works on Julia 0.6 so it requires modification on Julia 1.0. 
 
 
 
